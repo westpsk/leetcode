@@ -6,25 +6,30 @@
 var threeSum = function(nums) {
   let length = nums.length
   let res = []
-  let resStringMap = {}
   if(length < 3) return res
-  for(let i = 0; i < length - 2; i++){
-    for(let j = i+1; j < length - 1; j++){
-      for(let k = j+1; k < length; k++){
-        if(nums[i]+nums[j]+nums[k] === 0){
-          let sortItem = [nums[i], nums[j], nums[k]].sort()
-          let stringItem = sortItem.join()
-          if(!resStringMap[stringItem]){
-            res.push(sortItem)
-            resStringMap[stringItem] = true
-          }
-        }
+  let resStringMap = {}
+  const sortedList = nums.sort((a,b)=> a-b)
+  for(let i = 0, j = length - 1; i < j; ){
+    let twoSum = sortedList[i]+sortedList[j]
+    let minus = twoSum === 0 ? 0 : -twoSum
+    if(~sortedList.slice(i+1, j).indexOf(minus)){
+      let sortItem = [sortedList[i], sortedList[j], minus].sort()
+      let stringItem = sortItem.join()
+      if(!resStringMap[stringItem]){
+        res.push(sortItem)
+        resStringMap[stringItem] = true
       }
+    }
+    if(sortedList[i] >= minus){
+      j = j - 1
+    }else{
+      i = i + 1
     }
   }
   return res
 };
-
-var nums = [-1, 0, 1, 2, -1, -4];
+console.time()
+var nums = [-2,0,1,1,2];
 var res = threeSum(nums)
-console.log(res) 
+console.log(res)
+console.timeEnd()
