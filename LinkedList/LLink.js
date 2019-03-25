@@ -1,33 +1,37 @@
-export class LLink {
-  constructor(){
-    this.head = new Node('head');
-    this.find = find;
-    this.insert = insert;
-    this.remove = remove;
-    this.findPre = findPre;
-    this.display = display;
+import Node from './Node'
+
+export default class LLink {
+  constructor () {
+    this.head = new Node('head')
   }
 
-  find(item) {
-    var currNode = this.head;
-    while(currNode.element !== item){
-      currNode = currNode.next;
+  find (item) {
+    var currNode = this.head
+    console.log('currNode element => ', currNode.element)
+    console.log('item => ', item)
+    while (currNode.element !== item) {
+      currNode = currNode.next
     }
-    return currNode;
+    return currNode
   }
 
-  insert(item, newElement){
+  insert (newElement, item) {
     var newNode = new Node(newElement)
-    var currNode = this.find(item);
-    insert.next = currNode.next;
-    currNode.next = newNode;
+    console.log('newNode => ', newNode)
+    var currNode = this.find(item)
+    newNode.next = currNode.next
+    currNode.next = newNode
   }
 
-  display() {
-    var currNode = this.head;
-    while(currNode !== null){
-      console.log(currNode.element);
-      currNode = currNode.next;
+  remove () {
+
+  }
+
+  display () {
+    var currNode = this.head
+    while (currNode !== null) {
+      console.log(currNode.element)
+      currNode = currNode.next
     }
   }
 }

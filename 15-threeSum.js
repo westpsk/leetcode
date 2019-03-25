@@ -9,6 +9,22 @@ var threeSum = function(nums) {
   if(length < 3) return res
   let resStringMap = {}
   const sortedList = nums.sort((a,b)=> a-b)
+  const find = (start, end, arr) => {
+    let len = arr.length
+    if(end <= start || len < 3) return
+    for(let i = start, j = end - 1; i < j; ){
+      let twoSum = sortedList[i]+sortedList[j]
+      let minus = twoSum === 0 ? 0 : -twoSum
+      if(~sortedList.slice(i+1, j).indexOf(minus)){
+        let sortItem = [sortedList[i], sortedList[j], minus].sort()
+        let stringItem = sortItem.join()
+        if(!resStringMap[stringItem]){
+          res.push(sortItem)
+          resStringMap[stringItem] = true
+        }
+      }
+    }
+  }
   for(let i = 0, j = length - 1; i < j; ){
     let twoSum = sortedList[i]+sortedList[j]
     let minus = twoSum === 0 ? 0 : -twoSum
