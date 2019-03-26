@@ -3,7 +3,8 @@
  * @return {string[]}
  */
 var letterCombinations = function(digits) {
-  let map = {
+  if(!digits) return []
+  const map = {
     '2': 'abc',
     '3': 'def',
     '4': 'ghi',
@@ -13,11 +14,10 @@ var letterCombinations = function(digits) {
     '8': 'tuv',
     '9': 'wxyz'
   }
-  if(!digits) return []
-  let inputNumList = digits.split('')
-  let result = map[inputNumList[0]] ? map[inputNumList[0]].split('') : []
-  while(inputNumList.length > 1){
-    let arr2 = map[inputNumList[1]] ? map[inputNumList[1]].split('') : []
+  let inputList = digits.split('')
+  let result = map[inputList[0]].split('')
+  while(inputList.length > 1){
+    let arr2 = map[inputList[1]].split('')
     let temp = []
     for(let i = 0; i < result.length; i++){
       for(let j = 0; j < arr2.length; j++){
@@ -25,7 +25,7 @@ var letterCombinations = function(digits) {
       }
     }
     result = temp
-    inputNumList = inputNumList.splice(1)
+    inputList = inputList.splice(1)
   }
   return result
 };
