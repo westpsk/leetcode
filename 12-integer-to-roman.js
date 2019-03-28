@@ -41,12 +41,14 @@ var intToRoman = function(num) {
   const vDivisor = Math.floor(tempNum/5)
   if(vDivisor){
     result = tempNum < 9 ? result + Array(vDivisor).fill('V').join('') : result + 'IX'
-    tempNum -= tempNum < 9 ? xDivisor * 5 : 9
+    tempNum -= tempNum < 9 ? vDivisor * 5 : 9
   }
 
-  const iDivisor = Math.floor(tempNum%5)
   if(tempNum){
-    result = iDivisor < 4 ? result + Array(iDivisor).fill('I').join('') : result + 'IV'
+    result = tempNum < 4 ? result + Array(tempNum).fill('I').join('') : result + 'IV'
   }
   return result
 };
+
+var res = intToRoman(7)
+console.log(res)
