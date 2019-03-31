@@ -8,3 +8,4 @@
 6. [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)
 7. [Integer to Roman](https://leetcode.com/problems/integer-to-roman/)
 8. [Group Anagrams](https://leetcode.com/problems/group-anagrams/)
+9. [Word Search](https://leetcode.com/problems/word-search/submissions/) [实现](./79-word-search.js)
