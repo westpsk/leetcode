@@ -1,6 +1,5 @@
 # leetcode
 
-
 |id|leetcode|code|
 |:---:|-----|-----|
 |1|[two sum](https://leetcode.com/problems/two-sum/) | [code](./1-two-sum.js)|
@@ -12,3 +11,4 @@
 |7|[Integer to Roman](https://leetcode.com/problems/integer-to-roman/) |[code](./12-integer-to-roman.js)|
 |8|[Group Anagrams](https://leetcode.com/problems/group-anagrams/) |[code](./49-group-anagrams.js)|
 |9|[Word Search](https://leetcode.com/problems/word-search/submissions/) |[code](./79-word-search.js)|
+|10|[2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard/)|[code](./650-2-keys-keyboard.js)|
