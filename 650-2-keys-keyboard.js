@@ -3,28 +3,35 @@
  * @return {number}
  */
 var minSteps = function(n) {
-  if(n < 1 || n > 1000) return false
-  const step = primeStepMap()
-  return step[n]
+  const MAX = 1000
+  if(n < 1 || n > MAX) return false
+  const primeList = findPrime(MAX)
+  let mutiList = []
+  mutiList = findMuti(n, primeList, mutiList)
+  const step = mutiList.reduce((acc, cur) => {
+    return acc + cur
+  }, 0)
+  return step
 };
 
-const primeStepMap = () => {
-  let step = {
-    1: 0
-  }
-  for(let n = 2; n < 1001; n++){
-    if(isPrime(n)){
-      step[n] = n
-    }else{
-      for(let num in Object.keys(step)){
-        if(n%num === 0){
-          step[n] = step[num] + step[n/num]
-        }
-      }
+const findMuti = (n, primeList, mutiList) => {
+  console.log(mutiList)
+  for(let prime of primeList){
+    if(n%prime === 0){
+      mutiList.push(prime)
+      findMuti(n/prime, primeList, mutiList)
+      break
     }
-
   }
-  return step
+  return mutiList
+}
+
+const findPrime = (max) => {
+  let primeList = []
+  for(let n = 2; n <= max; n++){
+    isPrime(n) && primeList.push(n)
+  }
+  return primeList
 }
 
 const isPrime = (n) => {
@@ -35,5 +42,5 @@ const isPrime = (n) => {
   return flag
 }
 
-const res = minSteps(11)
+const res = minSteps(10)
 console.log(res)
