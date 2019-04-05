@@ -6,7 +6,7 @@ var uniquePathsWithObstacles = function(obstacleGrid) {
   if(obstacleGrid[0][0] === 1) return 0
   const row = obstacleGrid.length
   const col = obstacleGrid[0].length
-  let subGrid = []
+  const subGrid = []
 
   for(let i = 0; i < row; i++){
     subGrid[i] = []
