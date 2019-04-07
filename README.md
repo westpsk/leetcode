@@ -1,7 +1,7 @@
 # leetcode
 
 |id|leetcode|code|
-|:---:|-----|-----|
+|:---:|:-----|-----|
 |1|[two sum](https://leetcode.com/problems/two-sum/) | [code](./1-two-sum.js)|
 |2|[3Sum](https://leetcode.com/problems/3sum/)|[code](./15-3sum.js)|
 |3|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)|[code](./2-add-two-numbers.js)|
