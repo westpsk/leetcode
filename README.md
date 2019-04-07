@@ -15,3 +15,4 @@
 |11|[62 Unique Paths](https://leetcode.com/problems/unique-paths/)|[code](./62-unique-paths.js)|
 |12|[40 Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)|[code](./40-combination-sum-ii.js)|
 |13|[63 Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)|[code](./63-unique-paths-ii.js)|
+|13|[264. Ugly Number II](https://leetcode.com/problems/ugly-number-ii/)|[code](./264-ugly-number-ii.js)|
