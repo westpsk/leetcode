@@ -2,6 +2,7 @@
  * @param {number[]} nums
  * @return {void} Do not return anything, modify nums in-place instead.
  */
+// TODO
 const wiggleSort = function(nums) {
   const sort = nums.sort((a, b) => a-b)
   const list = []
