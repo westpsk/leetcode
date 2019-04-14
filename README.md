@@ -20,3 +20,4 @@
 |16|[4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)|[code](./4-median-of-two-sorted-arrays.js)|
 |17|[518. Coin Change 2](https://leetcode.com/problems/coin-change-2/)|[code](./518-coin-change-2.js)|
 |18|[997. Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/)|[code](./997-find-the-town-judge.js)|
+|19|[946. Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences/)|[code](./946-validate-stack-sequences.js)|
