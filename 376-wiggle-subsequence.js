@@ -4,7 +4,7 @@
  */
 const wiggleMaxLength = function(nums) {
   let len = nums.length
-  if(nums.length < 2) return len
+  if(len < 2) return len
   let up = down = 1
   for(let i = 1; i < len; i++){
     if(nums[i] > nums[i-1]){
