@@ -22,6 +22,7 @@
 |18|[997. Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/)|[code](./997-find-the-town-judge.js)|
 |19|[946. Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences/)|[code](./946-validate-stack-sequences.js)|
 |20|[376. Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/)|[code](./376-wiggle-subsequence.js)|
+|21|[780. Reaching Points](https://leetcode.com/problems/reaching-points/)|[code](./780-reaching-points.js)|
 
 ## todo
 

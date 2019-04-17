@@ -15,12 +15,14 @@ const reachingPoints = function(sx, sy, tx, ty) {
       return reachingPoints(sx, sy, tx, ty - tx)
     }
   }else{
-    if((tx === sx && (ty-sy)%tx === 0) || (sy === ty && (tx-sx)%ty === 0)) {
-      return true
+    if(tx === sx) {
+      return (ty-sy)%tx === 0
+    }else if(sy === ty){
+      return (tx-sx)%ty === 0
     }
     return false
   }
-};
+}
 
 const res = reachingPoints(1,2,1000000000,2)
 console.log(res)
