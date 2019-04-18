@@ -23,7 +23,7 @@
 |19|[946. Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences/)|[code](./946-validate-stack-sequences.js)|
 |20|[376. Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/)|[code](./376-wiggle-subsequence.js)|
 |21|[780. Reaching Points](https://leetcode.com/problems/reaching-points/)|[code](./780-reaching-points.js)|
-|22|[226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)|[code](./22-invert-binary-tree.js)|
+|22|[226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)|[code](./226-invert-binary-tree.js)|
 
 ## todo
 
