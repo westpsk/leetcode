@@ -24,6 +24,7 @@
 |20|[376. Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/)|[code](./376-wiggle-subsequence.js)|
 |21|[780. Reaching Points](https://leetcode.com/problems/reaching-points/)|[code](./780-reaching-points.js)|
 |22|[226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)|[code](./226-invert-binary-tree.js)|
+|23|[1029. Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/)|[code](./1029-two-city-scheduling.js)|
 
 ## todo
 
