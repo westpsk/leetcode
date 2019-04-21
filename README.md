@@ -30,3 +30,7 @@
 |id|leetcode|code|
 |:---:|:-----|-----|
 |20|[324. Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii/)|[code](./324-wiggle-sort-ii.js)|
+
+## list
+
+* dp
