@@ -9,6 +9,8 @@
  * @param {TreeNode} root
  * @return {number[]}
  */
+
+// dp
 const inorderTraversal = function(root) {
   if(!root) return []
   let res = []
@@ -25,4 +27,36 @@ const inorderTraversal = function(root) {
   }
   cf(root)
   return res
+}
+
+// another
+
+const inorderTraversal = function(root) {
+  if(!root) return []
+  let inorderList = []
+  inorderList.push(...inorderList(root.left))
+  inorderList.push(root.val)
+  inorderList.push(...inorderList(root.right))
+  return inorderList
+}
+
+// no dp
+// 先把左树全部推到stack里
+// 然后pop出一个作为current
+// 把current存入inorderList
+// 循环执行current的右树
+const inorderTraversal = function(root) {
+  let inorderList = []
+  let stack = []
+  let current = root
+  while(current || stack.length){
+    while(current){
+      stack.push(current)
+      current = current.left
+    }
+    current = stack.pop()
+    inorderList.push(current.val)
+    current = current.right
+  }
+  return inorderList
 }
