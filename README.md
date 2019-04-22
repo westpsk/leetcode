@@ -25,7 +25,7 @@
 |21|[780. Reaching Points](https://leetcode.com/problems/reaching-points/)|[code](./780-reaching-points.js)|
 |22|[226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)|[code](./226-invert-binary-tree.js)|
 |23|[1029. Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/)|[code](./1029-two-city-scheduling.js)|
-|24|[94. Two City Scheduling](https://leetcode.com/problems/binary-tree-inorder-traversal/)|[code](./94-binary-tree-inorder-traversal.js)|
+|24|[94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)|[code](./94-binary-tree-inorder-traversal.js)|
 
 ## todo
 
