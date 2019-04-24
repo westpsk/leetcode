@@ -26,6 +26,7 @@
 |22|[226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)|[code](./226-invert-binary-tree.js)|
 |23|[1029. Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/)|[code](./1029-two-city-scheduling.js)|
 |24|[94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)|[code](./94-binary-tree-inorder-traversal.js)|
+|25||
 
 ## todo
 
