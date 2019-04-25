@@ -27,6 +27,7 @@
 |23|[1029. Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/)|[code](./1029-two-city-scheduling.js)|
 |24|[94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)|[code](./94-binary-tree-inorder-traversal.js)|
 |25|[771. Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/)|[code](./771-jewels-and-stones.js)|
+|26|[105. Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)|[code](./105-construct-binary-tree-from-preorder-and-inorder-traversal.js)|
 
 ## todo
 
