@@ -11,10 +11,10 @@
  * @return {TreeNode}
  */
 const buildTree = function(preorder, inorder) {
-  return dp(0, preorder.length - 1, preorder, 0, inorder.length - 1, inorder)
+  return fn(0, preorder.length - 1, preorder, 0, inorder.length - 1, inorder)
 };
 
-const dp = function(s1, e1, preorder, s2, e2, inorder){
+const fn = function(s1, e1, preorder, s2, e2, inorder){
   if(s1 > e1 || s2 > e2) return null
   let value = preorder[s1]
   let node = new TreeNode(value)
