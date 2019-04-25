@@ -21,8 +21,8 @@ const fn = function(s1, e1, preorder, s2, e2, inorder){
   let point = inorder.indexOf(value)
   let left = point - s2
   let right = e2 - point
-  node.left = dp(s1+1, s1+left, preorder, s2, s2+left-1, inorder)
-  node.right = dp(e1-right+1, e1, preorder, e2-right+1, e2, inorder)
+  node.left = fn(s1+1, s1+left, preorder, s2, s2+left-1, inorder)
+  node.right = fn(e1-right+1, e1, preorder, e2-right+1, e2, inorder)
   return node
 }
 
