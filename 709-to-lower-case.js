@@ -6,10 +6,16 @@ var toLowerCase = function(str) {
   let charCodeOfA = 'A'.charCodeAt();
   let charCodeOfZ = 'Z'.charCodeAt();
   let difference = 'a'.charCodeAt() - charCodeOfA;
-  return str.split('').map(item => {
+  let list = str.split('').map(item => {
     let currChar = item.charCodeAt()
     return currChar <= charCodeOfZ && currChar >= charCodeOfA ? String.fromCharCode(currChar + difference) : item
   })
+  return list.join('')
+};
+
+// another
+var toLowerCase = function(str) {
+  return str.toLowerCase();
 };
 
 const res = toLowerCase('AA')
