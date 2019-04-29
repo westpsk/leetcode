@@ -30,6 +30,7 @@
 |26|[105. Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)|[code](./105-construct-binary-tree-from-preorder-and-inorder-traversal.js)|
 |27|[709. To Lower Case](https://leetcode.com/problems/to-lower-case/)|[code](./709-to-lower-case.js)|
 |28|[41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/)|[code](./41-first-missing-positive.js)|
+|29|[938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/)|[code](./29-range-sum-of-bst.js)|
 
 ## todo
 
