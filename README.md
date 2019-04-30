@@ -31,6 +31,7 @@
 |27|[709. To Lower Case](https://leetcode.com/problems/to-lower-case/)|[code](./709-to-lower-case.js)|
 |28|[41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/)|[code](./41-first-missing-positive.js)|
 |29|[938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/)|[code](./29-range-sum-of-bst.js)|
+|30|[905. Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)|[code](./905-sort-array-by-parity.js)|
 
 ## todo
 
