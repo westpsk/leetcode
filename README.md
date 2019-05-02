@@ -32,6 +32,7 @@
 |28|[41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/)|[code](./41-first-missing-positive.js)|
 |29|[938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/)|[code](./29-range-sum-of-bst.js)|
 |30|[905. Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)|[code](./905-sort-array-by-parity.js)|
+|31|[42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)|[code](./42-trapping-rain-water.js)|
 
 ## todo
 
