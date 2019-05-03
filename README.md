@@ -33,7 +33,7 @@
 |29|[938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/)|[code](./29-range-sum-of-bst.js)|
 |30|[905. Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)|[code](./905-sort-array-by-parity.js)|
 |31|[42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)|[code](./42-trapping-rain-water.js)|
-|32|[595. Big Countries](https://leetcode.com/problems/big-countries/)|[code](./595-big-countries.js)|
+|32|[595. Big Countries](https://leetcode.com/problems/big-countries/)|[code](./595-big-countries.sql)|
 |33|[977. Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)|[code](./977-squares-of-a-sorted-array.js)|
 
 ## todo
