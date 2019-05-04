@@ -35,6 +35,7 @@
 |31|[42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)|[code](./42-trapping-rain-water.js)|
 |32|[595. Big Countries](https://leetcode.com/problems/big-countries/)|[code](./595-big-countries.sql)|
 |33|[977. Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)|[code](./977-squares-of-a-sorted-array.js)|
+|34|[442. Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/)|[code](./442-find-all-duplicates-in-an-array.js)|
 
 ## todo
 
