@@ -37,6 +37,7 @@
 |33|[977. Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)|[code](./977-squares-of-a-sorted-array.js)|
 |34|[442. Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/)|[code](./442-find-all-duplicates-in-an-array.js)|
 |35|[1037. Valid Boomerang](https://leetcode.com/problems/valid-boomerang/)|[code](./1037-valid-boomerang.js)|
+|36|[1038. Binary Search Tree to Greater Sum Tree](https://leetcode.com/contest/weekly-contest-135/problems/binary-search-tree-to-greater-sum-tree/)|[code](./1038-binary-search-tree-to-greater-sum-tree.js)|
 
 ## todo
 
