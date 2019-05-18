@@ -36,16 +36,13 @@ const longestPalindrome = function(s) {
   let len = s.length
   let dp = Array.from({length: len}).fill([])
   let res = ''
-  for(let i = len - 1; i >= 0; i--){
-    for(let j = i; j < len; j++){
-      dp[i][j] = (i+1 >= j-1 || dp[i+1][j-1]) && s.charAt(j) === s.charAt(i)
-      if(dp[i][j] && res.length < j - i + 1){
-        res = s.slice(i, j+1)
+  for(let i = 0; i < len; i++){
+    for(let j = 0; j <= i; j++){
+      dp[j][i] = (j+1 > i-1 || dp[j+1][i-1]) && s.charAt(j) === s.charAt(i)
+      if(dp[j][i] && res.length < i - j + 1){
+        res = s.slice(j, i+1)
       }
     }
   }
   return res
 }
-
-const res = longestPalindrome('aba')
-console.log(res)
