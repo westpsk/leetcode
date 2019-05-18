@@ -44,6 +44,7 @@
 |40|[500. Keyboard Row](https://leetcode.com/problems/keyboard-row/)|[code](./500-keyboard-row.js)|
 |41|[75. Sort Colors](https://leetcode.com/problems/sort-colors/)|[code](./75-sort-colors.js)|
 |42|[53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|[code](./53-maximum-subarray.js)|
+|43|[5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)|[code](./5-longest-palindromic-substring.js)|
 
 ## todo
 
