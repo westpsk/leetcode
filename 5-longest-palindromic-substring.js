@@ -32,20 +32,46 @@
 // }
 
 // DP O(n^2)
+// const longestPalindrome = function(s) {
+//   const len = s.length
+//   const dp = new Array(len)
+//   for (let i = 0; i < len; i++) dp[i] = [];
+//   // const dp = Array.from({length: len}, () => new Array(len).fill(false))
+//   // const dp = Array.from(new Array(len)).fill(new Array(len).fill(false))
+//   let res = ''
+//   for(let i = 0; i < len; i++){
+//     for(let j = 0; j <= i; j++){
+//       dp[j][i] = (j+1 > i-1 || dp[j+1][i-1]) && s.charAt(j) === s.charAt(i)
+//       if(dp[j][i] && res.length < i - j + 1){
+//         res = s.slice(j, i+1)
+//       }
+//     }
+//   }
+//   return res
+// }
+
+// another O(n^2)
 const longestPalindrome = function(s) {
   const len = s.length
-  const dp = new Array(len)
-  for (let i = 0; i < len; i++) dp[i] = [];
-  // const dp = Array.from({length: len}, () => new Array(len).fill(false))
-  // const dp = Array.from(new Array(len)).fill(new Array(len).fill(false))
   let res = ''
   for(let i = 0; i < len; i++){
-    for(let j = 0; j <= i; j++){
-      dp[j][i] = (j+1 > i-1 || dp[j+1][i-1]) && s.charAt(j) === s.charAt(i)
-      if(dp[j][i] && res.length < i - j + 1){
-        res = s.slice(j, i+1)
-      }
-    }
+    let s1 = chk(s, i, i)
+    let s2 = chk(s, i, i+1)
+    if(s1.length > res.length) res = s1
+    if(s2.length > res.length) res = s2
   }
   return res
+}
+
+const chk = (s, start, end) => {
+  while(
+    start >= 0 &&
+    end < s.length &&
+    start <= end &&
+    s.charAt(start) === s.charAt(end)
+  ){
+    start--
+    end++
+  }
+  return s.slice(start+1, end)
 }
