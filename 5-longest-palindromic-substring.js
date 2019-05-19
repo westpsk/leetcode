@@ -31,7 +31,7 @@
 //   return res
 // }
 
-// DP O(n^2)
+// DP O(n^2) faster than 20%
 // const longestPalindrome = function(s) {
 //   const len = s.length
 //   const dp = new Array(len)
@@ -50,7 +50,7 @@
 //   return res
 // }
 
-// another O(n^2)
+// another O(n^2) 效率比DP高 faster than 90%
 const longestPalindrome = function(s) {
   const len = s.length
   let res = ''
