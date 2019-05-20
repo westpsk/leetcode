@@ -55,8 +55,8 @@ const longestPalindrome = function(s) {
   const len = s.length
   let res = ''
   for(let i = 0; i < len; i++){
-    let s1 = chk(s, i, i)
-    let s2 = chk(s, i, i+1)
+    let s1 = chk(s, i, i) // 奇数
+    let s2 = chk(s, i, i+1) // 偶数
     if(s1.length > res.length) res = s1
     if(s2.length > res.length) res = s2
   }
