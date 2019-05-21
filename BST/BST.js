@@ -1,3 +1,4 @@
+// 二叉查找树 Binary Search Tree
 function BinaryTree(){
   // 创建一个节点
   var Node = function(key){
@@ -204,3 +205,5 @@ console.log('remove node 3')
 binaryTree.preOrderTraverseNode(callback)   // 中左右
 
 // 红黑树！
+
+// 二叉树的高度
