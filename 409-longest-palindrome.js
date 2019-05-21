@@ -4,15 +4,15 @@
  */
 const longestPalindrome = function(s) {
   let len = 0
-  let obj = {}
-  s.split('').forEach(item => {
-    if(obj[item]){
-      obj[item]++
+  const map = s.split('').reduce((obj, cur) => {
+    if(obj[cur]){
+      obj[cur]++
     }else{
-      obj[item] = 1
+      obj[cur] = 1
     }
-  })
-  Object.values(obj).forEach(item => {
+    return obj
+  }, {})
+  Object.values(map).forEach(item => {
     if(item % 2){
       len += item - 1
     }else{
