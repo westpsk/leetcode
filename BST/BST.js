@@ -170,6 +170,20 @@ function BinaryTree(){
   this.remove = function(key){
     removeNode(root, key)
   }
+
+  // 翻转二叉树
+  var invertTree = function(node){
+    if(!node) return null
+    let temp = node.left
+    node.left = node.right
+    node.right = temp
+    invertTree(node.left)
+    invertTree(node.right)
+    return node
+  }
+  this.invert = function(){
+    return invertTree(root)
+  }
 }
 
 // insert test
@@ -188,7 +202,5 @@ binaryTree.preOrderTraverseNode(callback)   // 中左右
 binaryTree.remove(3)
 console.log('remove node 3')
 binaryTree.preOrderTraverseNode(callback)   // 中左右
-
-// 翻转二叉树
 
 // 红黑树！
