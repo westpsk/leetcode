@@ -9,7 +9,7 @@ function BinaryTree(){
   // 创建一个根结点
   var root = null
   var insertNode = function(node, newNode){
-    if(newNode.left < node.key){
+    if(newNode.key < node.key){
       if(node.left === null){
         node.left = newNode
       }else{
@@ -53,7 +53,7 @@ function BinaryTree(){
       preOrderTraverseNode(node.right, callback)
     }
   }
-  this.preOrderTraverseNode = function(node, callback){
+  this.preOrderTraverseNode = function(callback){
     preOrderTraverseNode(root, callback)
   }
 
@@ -65,8 +65,110 @@ function BinaryTree(){
       callback(node.key)
     }
   }
-  this.postOrderTraverseNode = function(node, callback){
+  this.postOrderTraverseNode = function(callback){
     postOrderTraverseNode(root, callback)
+  }
+
+  // 查找最小值
+  var minNode = function(node){
+    if(node){
+      while(node.left !== null && node){
+        node = node.left
+      }
+      return node.key
+    }
+    return null
+  }
+  this.min = function(){
+    return minNode(root)
+  }
+
+  // 查找最大值
+  var maxNode = function(node){
+    if(node !== null){
+      while(node.right){
+        node = node.right
+      }
+      return node.key
+    }
+  }
+  this.max = function(){
+    return maxNode(root)
+  }
+
+  // 查找具体的值
+  var findNode = function(node, key){
+    if(node !== null){
+      if(node.key === key){
+        return true
+      }else if(node.key < key){
+        return findNode(node.right, key)
+      }else{
+        return findNode(node.right, key)
+      }
+    }else{
+      return false
+    }
+  }
+  this.find = function(key){
+    return findNode(root, key)
+  }
+
+  // 找到最小节点
+  var findMinNode = function(node){
+    if(node){
+      while(node && node.left !== null){
+        node = node.left
+      }
+      return node
+    }
+    return null
+  }
+  this.minNode = function(node){
+    return findMinNode(node)
+  }
+
+  // 找到最大节点
+  var findMaxNode = function(node){
+    if(node){
+      while(node && node.right !== null){
+        node = node.right
+      }
+      return node
+    }
+    return null
+  }
+  this.maxNode = function(node){
+    return findMaxNode(node)
+  }
+
+  // 删除节点
+  var removeNode = function(node, key){
+    if(node === null){
+      return null
+    }else if(node.key === key){
+      if(node.left === null && node.right === null){
+        return null
+      }else if(node.left === null){
+        return node.right
+      }else if(node.right === null){
+        return node.left
+      }else{
+        var tempNode = findMinNode(node.right)
+        node.key = tempNode.key
+        node.right = removeNode(node.right, tempNode.key)
+        return node
+      }
+    }else if(node.key > key){
+      node.left = removeNode(node.left, key)
+      return node
+    }else{
+      node.right = removeNode(node.right, key)
+      return node
+    }
+  }
+  this.remove = function(key){
+    removeNode(root, key)
   }
 }
 
@@ -76,15 +178,15 @@ var binaryTree = new BinaryTree()
 nodes.forEach(function (key) {
   binaryTree.insert(key)
 })
+var callback = function (key) {
+  console.log(key)
+}
+// binaryTree.inOrderTraverseNode(callback)    // 左中右
+binaryTree.preOrderTraverseNode(callback)   // 中左右
+// binaryTree.postOrderTraverseNode(callback)  // 左右中
 
-// 查找最小值
-
-// 查找最大值
-
-// 查找具体的值
-
-// 删除节点
-
-// 删除中间节点
+binaryTree.remove(3)
+console.log('remove node 3')
+binaryTree.preOrderTraverseNode(callback)   // 中左右
 
 // 红黑树！
