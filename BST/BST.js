@@ -189,4 +189,6 @@ binaryTree.remove(3)
 console.log('remove node 3')
 binaryTree.preOrderTraverseNode(callback)   // 中左右
 
+// 翻转二叉树
+
 // 红黑树！
