@@ -51,7 +51,8 @@
 
 |id|leetcode|code|
 |:---:|:-----|-----|
-|20|[324. Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii/)|[code](./324-wiggle-sort-ii.js)|
+|1|[324. Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii/)|[code](./324-wiggle-sort-ii.js)|
+|2|[685. Redundant Connection II](https://leetcode.com/problems/redundant-connection-ii/)|[code](./685-redundant-connection-ii.js)|
 
 ## list
 
