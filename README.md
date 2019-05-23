@@ -46,6 +46,7 @@
 |42|[53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|[code](./53-maximum-subarray.js)|
 |43|[5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)|[code](./5-longest-palindromic-substring.js)|
 |44|[409. Longest Palindrome](https://leetcode.com/problems/longest-palindrome/)|[code](./409-longest-palindrome.js)|
+|45|[942. DI String Match](https://leetcode.com/problems/di-string-match/)|[code](./942-di-string-match.js)|
 
 ## todo
 
