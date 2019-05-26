@@ -47,7 +47,8 @@
 |43|[5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)|[code](./5-longest-palindromic-substring.js)|
 |44|[409. Longest Palindrome](https://leetcode.com/problems/longest-palindrome/)|[code](./409-longest-palindrome.js)|
 |45|[942. DI String Match](https://leetcode.com/problems/di-string-match/)|[code](./942-di-string-match.js)|
-|46|[1051. DI String Match](https://leetcode.com/contest/weekly-contest-138/problems/height-checker/)|[code](./1051-height-checker.js)|
+|46|[1051. Height Checker](https://leetcode.com/contest/weekly-contest-138/problems/height-checker/)|[code](./1051-height-checker.js)|
+|47|[1052. Grumpy Bookstore Owner](https://leetcode.com/contest/weekly-contest-138/problems/grumpy-bookstore-owner/)|[code](./1052-grumpy-bookstore-owner.js)|
 
 ## todo
 
