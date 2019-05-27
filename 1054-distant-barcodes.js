@@ -2,16 +2,9 @@
  * @param {number[]} barcodes
  * @return {number[]}
  */
-var rearrangeBarcodes = function(barcodes) {
-  let map = {}
-  let len = barcodes.length
-  for(let i = 0; i < len; i++){
-    if(map[barcodes[i]]){
-      map[barcodes[i]]++
-    }else{
-      map[barcodes[i]] = 1
-    }
-  }
+const rearrangeBarcodes = function(barcodes) {
+  const map = {}
+  barcodes.forEach(b => map[b] = (map[b] || 0) + 1)
   const keys = Object.keys(map).sort((a, b) => map[a] - map[b])
   let idx = 1
   for(let k of keys){
