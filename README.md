@@ -49,6 +49,7 @@
 |45|[942. DI String Match](https://leetcode.com/problems/di-string-match/)|[code](./942-di-string-match.js)|
 |46|[1051. Height Checker](https://leetcode.com/contest/weekly-contest-138/problems/height-checker/)|[code](./1051-height-checker.js)|
 |47|[1052. Grumpy Bookstore Owner](https://leetcode.com/contest/weekly-contest-138/problems/grumpy-bookstore-owner/)|[code](./1052-grumpy-bookstore-owner.js)|
+|48|[1054. Distant Barcodes](https://leetcode.com/contest/weekly-contest-138/problems/distant-barcodes/)|[code](./1054-distant-barcodes.js)|
 
 ## todo
 
