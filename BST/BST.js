@@ -70,6 +70,25 @@ function BinaryTree(){
     postOrderTraverseNode(root, callback)
   }
 
+  // 广度遍历
+  var BFS = function(node, callback){
+    let queue = []
+    queue.push(node)
+    while(queue.length){
+      let curr = queue.shift()
+      callback(curr.key)
+      if(curr.left){
+        queue.push(curr.left)
+      }
+      if(curr.right){
+        queue.push(curr.right)
+      }
+    }
+  }
+  this.BFS = function(callback){
+    BFS(root, callback)
+  }
+
   // 查找最小值
   var minNode = function(node){
     if(node){
@@ -200,9 +219,12 @@ var callback = function (key) {
 binaryTree.preOrderTraverseNode(callback)   // 中左右
 // binaryTree.postOrderTraverseNode(callback)  // 左右中
 
-binaryTree.remove(3)
-console.log('remove node 3')
-binaryTree.preOrderTraverseNode(callback)   // 中左右
+console.log('====BFS=====')
+binaryTree.BFS(callback)
+
+// binaryTree.remove(3)
+// console.log('remove node 3')
+// binaryTree.preOrderTraverseNode(callback)   // 中左右
 
 // 红黑树！
 
