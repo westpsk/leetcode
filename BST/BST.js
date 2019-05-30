@@ -141,6 +141,7 @@ function BinaryTree(){
     const queue = []
     queue.push(node)
     while(queue.length){
+      console.log(queue)
       let curr = queue.shift()
       if(curr){
         queue.push(curr.left)
@@ -232,7 +233,7 @@ function BinaryTree(){
 }
 
 // insert test
-var nodes = [8, 3, 10, 1, 6, 14, 4, 7, 13]
+var nodes = [8, 3, 10, 1, 6, 14, 9]
 var binaryTree = new BinaryTree()
 nodes.forEach(function (key) {
   binaryTree.insert(key)
@@ -247,6 +248,9 @@ binaryTree.preOrderTraverseNode(callback)   // 中左右
 console.log('====BFS=====')
 binaryTree.BFS(callback)
 
+console.log('====IS COMPLETE=====')
+const isComplete = binaryTree.isComplete()
+console.log(isComplete)
 // binaryTree.remove(3)
 // console.log('remove node 3')
 // binaryTree.preOrderTraverseNode(callback)   // 中左右
