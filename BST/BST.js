@@ -134,6 +134,31 @@ function BinaryTree(){
     return findNode(root, key)
   }
 
+  // 判断二叉树是不是完全二叉树
+  // 使用广度优先遍历, 思路是不管是否为null, 都入栈
+  // 出栈的时候发现是null, 那后面一定都是null或者空队列, 否则就不是完全二叉树
+  var isComplete = function(node){
+    const queue = []
+    queue.push(node)
+    while(queue.length){
+      let curr = queue.shift()
+      if(curr){
+        queue.push(curr.left)
+        queue.push(curr.right)
+      }else{
+        while(queue.length){
+          if(queue.shift()){
+            return false
+          }
+        }
+      }
+    }
+    return true
+  }
+  this.isComplete = function(){
+    return isComplete(root)
+  }
+
   // 找到最小节点
   var findMinNode = function(node){
     if(node){
