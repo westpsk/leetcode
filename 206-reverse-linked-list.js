@@ -19,7 +19,20 @@ Output: 5->4->3->2->1->NULL
  * @return {ListNode}
  */
 
+// two line
 const reverseList = function (head, pre = null) {
   while (head) [head.next, head, pre] = [pre, head.next, head]
   return pre
 };
+
+// to easy understand
+const reverseList = function (head) {
+  let cur = null
+  while(head){
+    let temp = head.next
+    head.next = cur
+    cur = head
+    head = temp
+  }
+  return cur
+}
