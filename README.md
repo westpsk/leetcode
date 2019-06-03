@@ -51,6 +51,7 @@
 |47|[1052. Grumpy Bookstore Owner](https://leetcode.com/contest/weekly-contest-138/problems/grumpy-bookstore-owner/)|[code](./1052-grumpy-bookstore-owner.js)|
 |48|[1054. Distant Barcodes](https://leetcode.com/contest/weekly-contest-138/problems/distant-barcodes/)|[code](./1054-distant-barcodes.js)|
 |49|[92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)|[code](./92-reverse-linked-list-ii.js)|
+|50|[234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/submissions/)|[code](./234-palindrome-linked-list.js)|
 
 ## todo
 

@@ -12,15 +12,16 @@
 const isPalindrome = function(head) {
   if(!head) return true
   let stack = []
-  stack.push(head.val)
-  head = head.next
+  let temp = head
   while(head){
-    if(stack[stack.length-1] === head.val){
-      stack.pop()
-    }else{
-      stack.push(head.val)
-    }
+    stack.push(head.val)
     head = head.next
   }
-  return stack.length > 0 ? false : true
+  while(temp){
+    if(temp.val !== stack.pop()){
+      return false
+    }
+    temp = temp.next
+  }
+  return true
 }
