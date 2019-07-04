@@ -55,6 +55,7 @@
 |51|[14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)|[code](./14-longest-common-prefix.js)|
 |52|[121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|[code](./121-best-time-to-buy-and-sell-stock.js)|
 |53|[77. combinations](https://leetcode.com/problems/combinations)|[code](./77-combinations.js)|
+|54|[39. Combination Sum](https://leetcode.com/problems/combination-sum/)|[code](./39-combination-sum.js)|
 
 ## todo
 
