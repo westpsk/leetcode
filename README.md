@@ -58,7 +58,7 @@
 |54|[39. Combination Sum](https://leetcode.com/problems/combination-sum/)|[code](./39-combination-sum.js)|
 |55|[26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)|[code](./26-remove-duplicates-from-sorted-array.js)|
 |56|[80. Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)|[code](./80-remove-duplicates-from-sorted-array-ii.js)|
-
+|57|[228. Summary Ranges](https://leetcode.com/problems/summary-ranges)|[code](./228-summary-ranges.js)|
 
 ## todo
 
