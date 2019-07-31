@@ -56,7 +56,11 @@
 |52|[121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|[code](./121-best-time-to-buy-and-sell-stock.js)|
 |53|[77. combinations](https://leetcode.com/problems/combinations)|[code](./77-combinations.js)|
 |54|[39. Combination Sum](https://leetcode.com/problems/combination-sum/)|[code](./39-combination-sum.js)|
-|55|[78. Subsets](https://leetcode.com/problems/subsets/)|[code](./78-subsets.js)|
+|55|[26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)|[code](./26-remove-duplicates-from-sorted-array.js)|
+|56|[80. Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)|[code](./80-remove-duplicates-from-sorted-array-ii.js)|
+|57|[228. Summary Ranges](https://leetcode.com/problems/summary-ranges)|[code](./228-summary-ranges.js)|
+|58|[78. Subsets](https://leetcode.com/problems/subsets/)|[code](./78-subsets.js)|
+
 
 ## todo
 
