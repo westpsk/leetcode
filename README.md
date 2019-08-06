@@ -60,6 +60,7 @@
 |56|[80. Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)|[code](./80-remove-duplicates-from-sorted-array-ii.js)|
 |57|[228. Summary Ranges](https://leetcode.com/problems/summary-ranges)|[code](./228-summary-ranges.js)|
 |58|[78. Subsets](https://leetcode.com/problems/subsets/)|[code](./78-subsets.js)|
+|59|[56. Merge Intervals](https://leetcode.com/problems/merge-intervals/)|[code](./56-merge-intervals.js)|
 
 
 ## todo
