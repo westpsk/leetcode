@@ -61,7 +61,7 @@
 |57|[228. Summary Ranges](https://leetcode.com/problems/summary-ranges)|[code](./228-summary-ranges.js)|
 |58|[78. Subsets](https://leetcode.com/problems/subsets/)|[code](./78-subsets.js)|
 |59|[56. Merge Intervals](https://leetcode.com/problems/merge-intervals/)|[code](./56-merge-intervals.js)|
-
+|60|[18. Merge Intervals](https://leetcode.com/problems/4sum/)|[code](./18-4sum.js)|
 
 ## todo
 
