@@ -62,6 +62,7 @@
 |58|[78. Subsets](https://leetcode.com/problems/subsets/)|[code](./78-subsets.js)|
 |59|[56. Merge Intervals](https://leetcode.com/problems/merge-intervals/)|[code](./56-merge-intervals.js)|
 |60|[18. Merge Intervals](https://leetcode.com/problems/4sum/)|[code](./18-4sum.js)|
+|61|[86. Partition List](https://leetcode.com/problems/partition-list/)|[code](./86-partition-list.js)|
 
 ## todo
 
