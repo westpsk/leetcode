@@ -5,7 +5,7 @@
 const maximalSquare = function (matrix) {
   let long = matrix.length;
   let width = matrix[0] && matrix[0].length;
-  let map = Array.from(new Array(long)).fill(new Array(width).fill(0));
+  let map = Array.from(new Array(long));
   let max = 0;
   for (let i = 0; i < long; i++) {
     map[i] = new Array(width).fill(0);
