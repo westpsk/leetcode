@@ -13,3 +13,17 @@ var singleNumber = function (nums) {
   }
   return Object.keys(map)[0];
 };
+
+// & 按位与
+// | 按位或
+// ~ 按位取反
+// ^ 按位异或
+// << 左移
+// >> 右移
+var singleNumber = function (nums) {
+  let res = nums[0];
+  for (let i = 1; i < nums.length; i++) {
+    res = res ^ nums[i];
+  }
+  return res;
+};
