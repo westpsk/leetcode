@@ -14,6 +14,7 @@ var singleNumber = function (nums) {
   return Object.keys(map)[0];
 };
 
+// bitwise operator
 // & 按位与
 // | 按位或
 // ~ 按位取反
