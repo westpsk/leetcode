@@ -37,3 +37,29 @@ const dfs = (v, vertex, seen, seeing, res) => {
   res.push(v);
   return true;
 };
+
+// bfs
+const findOrder = (numCourses, prerequisites) => {
+  const inDegrees = Array(numCourses).fill(0);
+  for (const [v] of prerequisites) {
+    inDegrees[v]++;
+  }
+  const queue = [];
+  for (let i = 0; i < inDegrees.length; i++) {
+    const degree = inDegrees[i];
+    if (degree === 0) queue.push(i);
+  }
+  const res = [];
+  while (queue.length) {
+    const u0 = queue.shift();
+    numCourses--;
+    res.push(u0);
+    for (const [v, u] of prerequisites) {
+      if (u === u0) {
+        inDegrees[v]--;
+        if (inDegrees[v] === 0) queue.push(v);
+      }
+    }
+  }
+  return numCourses === 0 ? res : [];
+};
