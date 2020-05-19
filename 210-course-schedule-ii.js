@@ -28,7 +28,7 @@ const dfs = (v, vertex, seen, seeing, res) => {
   }
   seeing.add(v);
   for (let nv of vertex[v]) {
-    if (!dfs(nv)) {
+    if (!dfs(nv, vertex, seen, seeing, res)) {
       return false;
     }
   }
