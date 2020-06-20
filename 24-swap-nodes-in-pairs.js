@@ -15,8 +15,9 @@ const swapPairs = function (head) {
   let current = dummy;
   while (current.next && current.next.next) {
     let first = current.next;
-    let sencond = current.next.next;
-    current.next = sencond;
+    let second = current.next.next;
+    first.next = second.next;
+    current.next = second;
     current.next.next = first;
     current = current.next.next;
   }
