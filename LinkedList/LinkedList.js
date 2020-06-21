@@ -1,14 +1,12 @@
-import Node from "./Node";
+import ListNode from "./Node";
 
 export default class LLink {
   constructor() {
-    this.head = new Node("head");
+    this.head = new ListNode();
   }
 
   find(item) {
     var currNode = this.head;
-    console.log("currNode element => ", currNode.element);
-    console.log("item => ", item);
     while (currNode.element !== item) {
       currNode = currNode.next;
     }
@@ -17,7 +15,6 @@ export default class LLink {
 
   insert(newElement, item) {
     var newNode = new Node(newElement);
-    console.log("newNode => ", newNode);
     var currNode = this.find(item);
     newNode.next = currNode.next;
     currNode.next = newNode;
@@ -27,7 +24,31 @@ export default class LLink {
    * @param {*} value
    * @return {LinkedListNode}
    */
-  delete() {}
+  delete(value) {
+    if (!this.head) return null;
+
+    let deleteNode = null;
+    while (this.head && this.head.value === value) {
+      deleteNode = this.head;
+      this.head = this.head.next;
+    }
+    let currNode = this.head;
+    if (currNode !== null) {
+      while (currNode.next) {
+        if (currNode.next.value === value) {
+          deleteNode = currNode.next;
+          currNode.next = currNode.next.next;
+        } else {
+          currNode = currNode.next;
+        }
+      }
+    }
+    // 检查尾节点
+    if (this.tail.value === value) {
+      this.tail = currNode;
+    }
+    return deleteNode;
+  }
 
   /**
    * @param {function} [callback]
@@ -48,7 +69,7 @@ export default class LLink {
   display() {
     var currNode = this.head;
     while (currNode !== null) {
-      console.log(currNode.element);
+      console.log(currNode.value);
       currNode = currNode.next;
     }
   }
