@@ -23,3 +23,19 @@ const deleteDuplicates = function (head) {
   }
   return head
 };
+
+const deleteDuplicates = function (head) {
+  let map = new Map()
+  let res = head
+  let pre = new ListNode()
+  while (head) {
+    if (map.has(head.val)) {
+      pre.next = head.next
+    } else {
+      map.set(head.val)
+      pre = head
+    }
+    head = head.next
+  }
+  return res
+} 
