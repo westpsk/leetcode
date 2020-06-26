@@ -16,7 +16,9 @@ const deleteDuplicates = function (head) {
   let cur = head;
   while (cur && cur.next) {
     if (cur.val === cur.next.val) {
-      cur.next = cur.next.next;
+      let node = cur.next;
+      cur.next = node.next;
+      node.next = null;
     } else {
       cur = cur.next;
     }
