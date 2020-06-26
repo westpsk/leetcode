@@ -13,29 +13,29 @@ const { default: ListNode } = require("./LinkedList/Node");
  * @return {ListNode}
  */
 const deleteDuplicates = function (head) {
-  let cur = head
+  let cur = head;
   while (cur && cur.next) {
     if (cur.val === cur.next.val) {
-      cur.next = cur.next.next
+      cur.next = cur.next.next;
     } else {
-      cur = cur.next
+      cur = cur.next;
     }
   }
-  return head
+  return head;
 };
 
 const deleteDuplicates = function (head) {
-  let map = new Map()
-  let res = head
-  let pre = new ListNode()
+  let map = new Map();
+  let res = head;
+  let pre = new ListNode();
   while (head) {
     if (map.has(head.val)) {
-      pre.next = head.next
+      pre.next = head.next; // 链表的删除操作
     } else {
-      map.set(head.val)
-      pre = head
+      map.set(head.val);
+      pre = head;
     }
-    head = head.next
+    head = head.next;
   }
-  return res
-} 
+  return res;
+};
