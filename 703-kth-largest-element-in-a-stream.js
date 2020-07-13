@@ -3,15 +3,8 @@
  * @param {number[]} nums
  */
 var KthLargest = function (k, nums) {
-  this.minHeap = nums.slice(0, k).sort((a, b) => a - b);
+  this.sorted = nums.sort((a, b) => a - b);
   this.k = k;
-  for (let i = k; i < nums.length; i++) {
-    if (nums[i] > this.minHeap[0]) {
-      this.minHeap.shift(0);
-      this.minHeap.push(nums[i]);
-      this.minHeap.sort((a, b) => a - b);
-    }
-  }
 };
 
 /**
@@ -19,17 +12,24 @@ var KthLargest = function (k, nums) {
  * @return {number}
  */
 KthLargest.prototype.add = function (val) {
-  if (this.minHeap.length < this.k) {
-    this.minHeap.push(val);
-    this.minHeap.sort((a, b) => a - b);
-  } else {
-    if (val > this.minHeap[0]) {
-      this.minHeap.shift(0);
-      this.minHeap.push(val);
-      this.minHeap.sort((a, b) => a - b);
+  let start = 0;
+  let end = this.sorted.length;
+  let sortIndex = start;
+  while (start <= end) {
+    let mid = start + Math.floor((end - start) / 2);
+    if (this.sorted[mid] < val) {
+      start = mid + 1;
+      sortIndex = mid + 1;
+    } else if (this.sorted[mid] > val) {
+      end = mid - 1;
+      sortIndex = mid;
+    } else {
+      sortIndex = mid;
+      break;
     }
   }
-  return this.minHeap[0];
+  this.sorted.splice(sortIndex, 0, val);
+  return this.sorted[this.sorted.length - this.k];
 };
 
 /**
