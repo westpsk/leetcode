@@ -14,21 +14,16 @@ var KthLargest = function (k, nums) {
 KthLargest.prototype.add = function (val) {
   let start = 0;
   let end = this.sorted.length;
-  let sortIndex = start;
-  while (start <= end) {
+  while (start < end) {
     let mid = start + Math.floor((end - start) / 2);
     if (this.sorted[mid] < val) {
       start = mid + 1;
-      sortIndex = mid + 1;
-    } else if (this.sorted[mid] > val) {
-      end = mid - 1;
-      sortIndex = mid;
     } else {
-      sortIndex = mid;
-      break;
+      end = mid;
     }
   }
-  this.sorted.splice(sortIndex, 0, val);
+  this.sorted.splice(start, 0, val);
+  console.log(this.sorted);
   return this.sorted[this.sorted.length - this.k];
 };
 
