@@ -25,3 +25,26 @@ const lowestCommonAncestor = function(root, p, q) {
   // }
   return left === null ? right : right === null ? left : root  
 };
+
+// 利用二叉搜索树的特点
+const lowestCommonAncestor = function(root, p, q) {
+  if(root.val > p.val && root.val > q.val) {
+    return lowestCommonAncestor(root.left, p, q) 
+  }else if(root.val < p.val && root.val < q.val) {
+    return lowestCommonAncestor(root.right, p, q) 
+  } else {
+    return root
+  }
+}
+
+const lowestCommonAncestor = function(root, p, q) {
+  while(root) {
+    if(root.val > p.val && root.val > q.val) {
+      root = root.left
+    }else if(root.val < p.val && root.val < q.val) {
+      root = root.right
+    }else {
+      return root
+    }
+  }
+}
